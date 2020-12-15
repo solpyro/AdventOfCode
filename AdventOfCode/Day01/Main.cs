@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.IO.Enumeration;
-using System.Linq;
-using System.Runtime.Intrinsics;
 
 namespace AdventOfCode.Day01
 {

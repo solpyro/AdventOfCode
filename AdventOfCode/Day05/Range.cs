@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace AdventOfCode.Day05
+﻿namespace AdventOfCode.Day05
 {
     public class Range
     {
