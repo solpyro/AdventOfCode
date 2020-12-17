@@ -20,6 +20,15 @@
             //Day14.Main.Run();
             //Day15.Main.Run();
             Day16.Main.Run();
+            Day17.Main.Run();
+            //Day18.Main.Run();
+            //Day19.Main.Run();
+            //Day20.Main.Run();
+            //Day21.Main.Run();
+            //Day22.Main.Run();
+            //Day23.Main.Run();
+            //Day24.Main.Run();
+            //Day25.Main.Run();
         }
     }
 }
