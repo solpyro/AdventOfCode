@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace AdventOfCode.Day16
 {
@@ -7,13 +8,19 @@ namespace AdventOfCode.Day16
         public static void Run()
         {
 
-            Console.WriteLine($"Error scanning rate: {test.SumInvalidValues()} (71)");
+            Console.WriteLine($"Error scanning rate: {test1.SumInvalidValues()} (71)");
             Console.WriteLine($"Error scanning rate: {data.SumInvalidValues()}");
 
-
+            test2.GetMyTicket().ForEach(n => Console.WriteLine($"{n.field}: {n.value}"));
+            
+            Console.WriteLine();
+            var ticket = data.GetMyTicket();
+            ticket.ForEach(n => Console.WriteLine($"{n.field}: {n.value}"));
+            var solution = ticket.Where(n => n.field.StartsWith("departure ")).Select(n => (long)n.value).Aggregate((a, b) => a * b);
+            Console.WriteLine(solution);
         }
 
-        public static Tickets test = new Tickets(
+        public static Tickets test1 = new Tickets(
             new[]
             {
                 "class: 1-3 or 5-7",
@@ -27,6 +34,20 @@ namespace AdventOfCode.Day16
                 "40,4,50",
                 "55,2,20",
                 "38,6,12"
+            }
+        );
+        public static Tickets test2 = new Tickets(
+            new []
+            {
+                "class: 0-1 or 4-19",
+                "row: 0-5 or 8-19",
+                "seat: 0-13 or 16-19"
+            },
+            "11,12,13",
+            new [] {
+                "3,9,18",
+                "15,1,5",
+                "5,14,9"
             }
         );
         public static Tickets data = new Tickets(
