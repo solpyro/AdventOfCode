@@ -7,7 +7,7 @@ namespace AdventOfCode.Day17
     {
         public static void Run()
         {
-            var pocket = new PocketDimention();
+            var pocket = new PocketDimention3();
 
             pocket.Init(test);
             pocket.RunCycles(6);
@@ -16,6 +16,16 @@ namespace AdventOfCode.Day17
             pocket.Init(data);
             pocket.RunCycles(6);
             Console.WriteLine($"There are {pocket.ActiveCubes} active cubes");
+
+
+            var pocket4 = new PocketDimention4();
+            pocket4.Init(test);
+            pocket4.RunCycles(6);
+            Console.WriteLine($"There are {pocket4.ActiveCubes} (848) active hypercubes");
+            //return;
+            pocket4.Init(data);
+            pocket4.RunCycles(6);
+            Console.WriteLine($"There are {pocket4.ActiveCubes} active hypercubes");
         }
 
         private static string[] test = new[]

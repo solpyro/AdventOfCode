@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace AdventOfCode.Day17
 {
-    internal class PocketDimention
+    internal class PocketDimention3
     {
         private bool[,,] _state;
         
