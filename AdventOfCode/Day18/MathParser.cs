@@ -48,7 +48,7 @@ namespace AdventOfCode.Day18
             else
             {
                 var i = 1;
-                while (i < (expr.Length - 1) && "0123456789".Contains(expr[i]))
+                while (i < (expr.Length) && "0123456789".Contains(expr[i]))
                     i++;
                 return (expr.Substring(i), long.Parse(expr.Substring(0,i)));
             }

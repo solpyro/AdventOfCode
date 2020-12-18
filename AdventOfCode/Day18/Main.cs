@@ -18,7 +18,7 @@ namespace AdventOfCode.Day18
             {
                 Console.WriteLine($"{n.data} evaluates to {AdvancedMathParser.Parse(n.data)} ({n.resultAdvanced})");
             }
-            //Console.WriteLine($"The sum of input questions is {data.ToList().Select(AdvancedMathParser.Parse).Aggregate((a, b) => a + b)}");
+            Console.WriteLine($"The sum of input questions is {data.ToList().Select(AdvancedMathParser.Parse).Aggregate((a, b) => a + b)}");
         }
 
         public static (string data, int resultBasic, int resultAdvanced)[] test = new[]
