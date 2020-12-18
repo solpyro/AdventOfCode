@@ -1,6 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Security;
 
 namespace AdventOfCode.Day18
 {
@@ -55,7 +53,6 @@ namespace AdventOfCode.Day18
                 return (expr.Substring(i), long.Parse(expr.Substring(0,i)));
             }
         }
-
         private static (string, Func<long, long, long>) ConsumeOp(string expr)
         {
             switch (expr[0])
