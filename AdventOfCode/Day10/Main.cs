@@ -64,7 +64,7 @@ namespace AdventOfCode.Day10
         {
             return tribonacci[n - 1];
         }
-        private static int[] tribonacci = new int[] { 1, 1, 2, 4, 7, 13, 24, 44, 81, 149 };
+        private static int[] tribonacci = { 1, 1, 2, 4, 7, 13, 24, 44, 81, 149 };
 
         private static List<int> data = new List<int>
         {

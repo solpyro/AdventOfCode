@@ -18,7 +18,6 @@ namespace AdventOfCode.Day12
             var testWpShip = new WaypointShip();
             test.ForEach(cmd => testWpShip.Move(cmd[0], short.Parse(cmd.Substring(1))));
             Console.WriteLine($"The ship's manhattan distance is {testWpShip.ManhattanDist} (286)");
-            // Why is this 362?
 
             var wpShip = new WaypointShip();
             data.ForEach(cmd => wpShip.Move(cmd[0], short.Parse(cmd.Substring(1))));
