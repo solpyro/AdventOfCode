@@ -35,6 +35,20 @@ I was almost expecting some kind of GoL puzzle, and here it is.
 This task reminded me of a task we had on the very first day of my university OOP course; where we had to write an algorithm to navigte a submarine out of a maze.
 **Part 1** Created the Ship class to process each of the commands.
 **Part 2** The addition of the waypoint was a bit more tricky, especially the waypoint turning. I knew the 0, 90, 180 and 270 outputs from Sin & Cos had special values, so after a bit of algebra, I'd written a reletively optimized transformation function.
+## Day 13 - Bus timetables
+**Part 1** was very trivial. I calculate when each bus would leave after my arrival time, and return the one with the shortest wait.
+**Part 2** was not so easy, and again I turned to the subreddit for 'inspiration', which is how I ended up implmenenting a sieve.
+## Day 14 - Memory initilisation
+Why use 36-bit strings and numbers? All my ints are 16\*(2^n) so I ended up with *ulong*'s everywhere.
+**Part 1** was a simple bitmasking excercise.
+**Part 2** again flipped the task, rather than extended it. Most of the new code structure was simple enough, I just needed an extra function to compose a list of the possible memory addresses.
+## Day 15 - Memory ~~drinking~~ game
+Maybe there's some clever way to solve this, but I can't see it and I had actual work to do as well, so implement the actual counting game I did. At least for part 2, In just had to count further than in part 1.
+## Day 16 - Train tickets
+**Part 1** Another day, another Regex parser. After getting the rules into a usable (numeric) form, checking each field was a straightforward task. 
+**Part 2** Having cleaned the data, implementing a procecess of elimination was a satisfying exercise. 
+## Day 17 - Conway cubes
+I don't know why I'd never thought to implement a multi-dimentional GoL, but now I can say I have. Both parts were simple, although I have to confess I did implement them such that I hold all the active space in memory and I had separte ^3 and ^4 classes.
 ## Day 18 - Weird Maths
 **Part 1** A pretty quick implmentation of a token consumer, handling the brackets recursively solving the contents.
 **Part 2** First attempt was the same as part 1, but with more recursion, now that we have to evaluate the + before the \*. I had a working implementation, but C# didn't have a big enough call stack for some of the tests. In the end I impemented some tricks from u/LotOfDilemmaMan's solution, making the call stack much shorter & sing Regex to simplify the simple additions.
