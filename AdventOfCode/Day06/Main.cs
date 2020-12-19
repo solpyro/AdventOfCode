@@ -25,8 +25,6 @@ namespace AdventOfCode.Day06
             return group.Aggregate((a, b) =>
             {
                 var c = "";
-                //iterate through a
-                // keep if in b
                 foreach (var i in a.ToList())
                 {
                     if (b.Contains(i))

@@ -25,12 +25,9 @@ namespace AdventOfCode.Day05
 
         private static int GetSeatId(string pass)
         {
-            //var (row, col) = (0, 0);
             var row = new Range(128);
             var col = new Range(8);
             
-            //binary search FBFBFBF(0-127) LRL(0-8)
-            //FBF*8+LRL = Seat ID
             for (int i = 0; i < 7; i++)
             {
                 if (pass[i] == 'F')

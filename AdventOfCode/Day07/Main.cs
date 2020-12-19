@@ -25,7 +25,6 @@ namespace AdventOfCode.Day07
 
             var bagCount = CountBagsInside("shiny gold", rules);
             Console.WriteLine($"There must be {bagCount} bags inside a shiny gold bag");
-
         }
 
         private static int CountBagsInside(string key, Dictionary<string,List<Tuple<string, int>>> rules)
@@ -39,7 +38,6 @@ namespace AdventOfCode.Day07
         {
             var dict = new Dictionary<string, List<Tuple<string,int>>>();
 
-            //for each in data
             foreach (var rule in data)
             {
                 var key = KeyParser.Match(rule);
