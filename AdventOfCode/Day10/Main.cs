@@ -45,7 +45,7 @@ namespace AdventOfCode.Day10
             // implemented u/pseale's solution
             list.AddRange(new List<int> {0, maxJoltage});
             list.Sort((a, b) => a - b);
-            var (multiplier, currentRun) = (1l, 1);
+            var (multiplier, currentRun) = (1L, 1);
             foreach (var j in list)
             {
                 if (list.Contains(j + 1))

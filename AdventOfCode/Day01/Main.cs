@@ -23,7 +23,7 @@ namespace AdventOfCode.Day01
                     Console.WriteLine($"{v1} * {v2} * {v3} = {v1 * v2 * v3}");
                     break;
                 }
-                catch (InvalidDataException e)
+                catch (InvalidDataException)
                 {
                     continue;
                 }
