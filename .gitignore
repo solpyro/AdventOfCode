@@ -18,4 +18,5 @@ AdventOfCode/obj/Debug/netcoreapp3.1/AdventOfCode.exe
 AdventOfCode/obj/Debug/netcoreapp3.1/AdventOfCode.genruntimeconfig.cache
 AdventOfCode/obj/Debug/netcoreapp3.1/AdventOfCode.pdb
 .vscode/
+.ipynb_checkpoints/
 AdventOfCode/obj/
