@@ -1,0 +1,13 @@
+C:\Git\AdventOfCode2020\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.exe
+C:\Git\AdventOfCode2020\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.deps.json
+C:\Git\AdventOfCode2020\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.runtimeconfig.json
+C:\Git\AdventOfCode2020\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.runtimeconfig.dev.json
+C:\Git\AdventOfCode2020\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.dll
+C:\Git\AdventOfCode2020\AdventOfCode\bin\Debug\netcoreapp3.1\AdventOfCode.pdb
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.csprojAssemblyReference.cache
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.AssemblyInfoInputs.cache
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.AssemblyInfo.cs
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.csproj.CoreCompileInputs.cache
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.dll
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.pdb
+C:\Git\AdventOfCode2020\AdventOfCode\obj\Debug\netcoreapp3.1\AdventOfCode.genruntimeconfig.cache
