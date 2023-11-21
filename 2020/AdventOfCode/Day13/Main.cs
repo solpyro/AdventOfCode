@@ -33,14 +33,6 @@ namespace AdventOfCode.Day13
         }
         private static long FirstSequencialDeparture(List<int> list)
         {
-            //what time will busses depart in order?
-            //17 has to depart first
-            //41 departs after 7min
-            //37 after a further 4min, etc
-
-            //find n where n%list[0] == 0
-            // and list[0+x] == 0 || n+x%list[0+x] == 0
-
             var pList = list.Select((s, ix) => (i: ix, id: (long)s))
                 .Where(t => t.id > 0)
                 .ToList();
