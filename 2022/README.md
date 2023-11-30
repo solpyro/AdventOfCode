@@ -64,7 +64,7 @@ That solution _might_ work if I haveenough ram and time, but I never saw it prog
 
 > You'll need to **find another way to keep your worry levels manageable**.
 
-did not mean `divide by 1` but that I should calculate a valid number ti divide by. I had a vague memory, from my A-level Maths, as to what I should do and checking through some of the solutions confirmed my hunch. Now my code runs at a decent speed, but yields the wrong answer again. Thanks to a small hint from [u/1234abcddcba4321](https://www.reddit.com/r/adventofcode/comments/zih7gf/comment/izrck61/) I'd fogured out the bug in my code and had subdued the monkeys on my back. I elected not te remove the `BigInteger` from my code because there are other things to do with my life.
+did not mean `divide by 1` but that I should calculate a valid number to divide by. I had a vague memory, from my A-level Maths, as to what I should do and checking through some of the solutions confirmed my hunch. Now my code runs at a decent speed, but yields the wrong answer again. Thanks to a small hint from [u/1234abcddcba4321](https://www.reddit.com/r/adventofcode/comments/zih7gf/comment/izrck61/) I'd fogured out the bug in my code and had subdued the monkeys on my back. I elected not te remove the `BigInteger` from my code because there are other things to do with my life.
 
 ## Day 12: Hill Climbing Algorithm ⭐⭐
 
