@@ -1,6 +1,9 @@
 # Advent of Code 2023
 
 To expand my horizons, I'm trying to solve the [AdventOfCode 2023](https://adventofcode.com/2023) puzzles with F#. 
+I'm using VSCode and the [Ionide for F#](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) plugin for the language support. 
+
+To run the F# scripts, I'm having to select the code and press <kbd>alt</kbd>+<kbd>enter</kbd> which writes the selected code to the FSI terminal. 
 
 ## Day 1: Trebuchet?! ⭐⭐
 
