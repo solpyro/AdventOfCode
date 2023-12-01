@@ -2,7 +2,8 @@
 
 To expand my horizons, I'm trying to solve the [AdventOfCode 2023](https://adventofcode.com/2023) puzzles with F#. 
 
-## Day 1: Trebuchet?! ⭐
+## Day 1: Trebuchet?! ⭐⭐
 
 I'd spent a little time yesterday trying to prepare the workspace, but today's first task shows that I'm _really_ not used to the F# syntax. I wrote something I thought would work, but got nowhere at the start of the day. It was only later that I struggled more and started to get a grasp on how the language behaves. The compiler messages still feel really rough, and remind me of when I was first learning to program.
-  
+
+After some umming and arring, I was trying to figure out how to replace the strings with numerals, but I'd already spotted the trap of overlapping numbers and was trying to find a way that would handle that nicely. Ultimately, I went to check [Wotee](https://github.com/Wotee)'s solution and spotted the simple idea he came up with; replacing the string with `string\dstring`, preserving any overlapping and ordering, and only adding a few letter characters that get ignored anyway.  
