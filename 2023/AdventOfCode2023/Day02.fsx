@@ -19,10 +19,12 @@ let games =
         rounds = mapRounds game[1..]
     }) 
 
-let IsLessThan(round:IDictionary<string,int>, key:string, target:int) = 
+let GetValue(round:IDictionary<string,int>, key:string) =
     match round.TryGetValue(key) with
-    | true, value -> value <= target
-    | _ -> true
+    | true, value -> value
+    | _ -> 0
+let IsLessThan(round:IDictionary<string,int>, key:string, target:int) = 
+    GetValue(round, key) <= target
 
 games
 |> Array.where(fun game -> 
@@ -34,3 +36,16 @@ games
 )
 |> Array.sumBy(fun game -> game.id)
 |> printfn "Part 1: %i"
+
+let GetMaxCounts (rounds:IDictionary<string,int>[], colour) = 
+    rounds
+    |> Array.map (fun round -> GetValue(round, colour))
+    |> Seq.max
+    
+games
+|> Array.map (fun game -> 
+    GetMaxCounts(game.rounds, "red") * 
+    GetMaxCounts(game.rounds, "green") * 
+    GetMaxCounts(game.rounds, "blue"))
+|> Array.sum
+|> printfn "Part 2: %i"
