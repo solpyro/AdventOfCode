@@ -18,3 +18,6 @@ I created a record for the game, so I could store the game id againt the rounds,
 
 Part 2 felt like it would be easy, but once again I ran into some problems with thinking functionally. I had hoped that I could collapse the rounds into a single tuple, but both `Array.fold` and `Seq.reduce` requited functions that would create objects of the same type as the array that was generated. In the end I had to parse the arrys three times (once for each colour) to get the max values.  
 
+## Day 3: Gear Ratios
+
+Compared to day 2, parsing the data here was pretty easy, but once again, I had to figure out how to express my idea in a _functional_ way. Having written a neat little script that would find all non-numeric characters, then find and sum all numeric neighbours, I realised I was getting the wrong result for the test data. Rereading the challenge, I realised I shouldn't be summing single digits, but every _string of numbers_ that touch the symbols (and not duplicating them at that).
