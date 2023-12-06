@@ -24,5 +24,11 @@ cards
 |> Array.sumBy calculateScore
 |> printfn "Part 1: %i"
 
-// input
+// cards
 // |> printfn "Part 2: %i"
+// TODO - Day 4 Part 2
+
+// Somehow I should have step through an array of cards that I can also keep adding cards to
+// each card will append a certain number of cards from the original `cards` array 
+// then the current card would be discarded and a counter would be incremented
+// once the array was empry again, the counter would be the total number of won cards; our solution
