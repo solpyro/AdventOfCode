@@ -30,3 +30,7 @@ still feel like I'm "tricking" thento doing what i want, but from reading yester
 
 I was able to write the parsing logic to conver the input into data structures, but the actual mapping task seemed so convoluted that I'm not sure I'd know where to start in an imperitive language, let alone something functional. Adding to that that the real input uses suspiciously large numbers, I'm not sure I'll be completing today's task at all.
 
+## Day 6: Wait For It ⭐
+
+Parsing, mapping and computing part 1 was pretty simple, with the techniques I've discovered ove rthe past 5 days.
+
