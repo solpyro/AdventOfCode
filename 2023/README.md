@@ -24,5 +24,9 @@ Compared to day 2, parsing the data here was pretty easy, but once again, I had 
 
 ## Day 4: Scratchcards ⭐
 
-still feel like I'm "tricking" thento doing what i want, but from reading yesterday I was able to understand, and utilise the 'currying' pattern 
+still feel like I'm "tricking" thento doing what i want, but from reading yesterday I was able to understand, and utilise the 'currying' pattern
+
+## Day 5: If You Give A Seed A Fertilizer
+
+I was able to write the parsing logic to conver the input into data structures, but the actual mapping task seemed so convoluted that I'm not sure I'd know where to start in an imperitive language, let alone something functional. Adding to that that the real input uses suspiciously large numbers, I'm not sure I'll be completing today's task at all.
 
