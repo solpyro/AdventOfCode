@@ -30,7 +30,19 @@ still feel like I'm "tricking" thento doing what i want, but from reading yester
 
 I was able to write the parsing logic to conver the input into data structures, but the actual mapping task seemed so convoluted that I'm not sure I'd know where to start in an imperitive language, let alone something functional. Adding to that that the real input uses suspiciously large numbers, I'm not sure I'll be completing today's task at all.
 
-## Day 6: Wait For It ⭐
+## Day 6: Wait For It ⭐⭐
 
 Parsing, mapping and computing part 1 was pretty simple, with the techniques I've discovered ove rthe past 5 days.
 
+I accidentially tested my part 2 parser against my real input, which gave me the heads-up that this was designed to be too large for conventional numbers. I quickly realsised that I needed another way to solve this and, after shuffling the distance calculation a little, realised that I could use the quadratic equation solver on this: 
+
+$$
+\begin{aligned}
+distance &= chargeTime \times (totalTime - chargeTime) \\
+distance &= chargeTime \cdot totalTime - chargeTime^2 \\
+0 &= -chargeTime^2 + totalTime \cdot chargeTime - distance \\
+0 &= -1 \cdot c^2 + t \cdot c - d
+\end{aligned}
+$$
+
+And with a little help from [F# Snippets](https://www.fssnip.net/38/title/Wicked-way-to-solve-quadratic-equation-using-list-of-operators) I quickly had the quadratic formula implemented and part 2 solved.
