@@ -19,3 +19,5 @@ let mappers =
             destinationStart = list[1];
             length = list[2]
         }))
+
+//someone at work mentioned there should be a way to collapse the mappers so it's just seeds->location, idk
