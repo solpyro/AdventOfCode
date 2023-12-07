@@ -32,3 +32,4 @@ cards
 // each card will append a certain number of cards from the original `cards` array 
 // then the current card would be discarded and a counter would be incremented
 // once the array was empry again, the counter would be the total number of won cards; our solution
+// Possibly Array.collect would help
