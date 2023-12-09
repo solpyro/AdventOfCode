@@ -1,7 +1,7 @@
 ﻿open System
 
-let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/09.txt")
-// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/09.txt")
+// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/09.txt")
+let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/09.txt")
 
 let histories =
     input
@@ -29,11 +29,7 @@ let rec ExtrapolateBack (history:Int64[]) =
             history
             |> Array.pairwise
             |> Array.map (fun (a, b) -> b-a)
-        history[0] - (Extrapolate projection)
-
-let foo =
-    histories
-    |> Array.map ExtrapolateBack
+        history[0] - (ExtrapolateBack projection)
 
 histories
 |> Array.sumBy ExtrapolateBack
