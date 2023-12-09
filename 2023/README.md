@@ -52,3 +52,7 @@ And with a little help from [F# Snippets](https://www.fssnip.net/38/title/Wicked
 Basic parsing was easy and I'd even gotten most of the logic down, but I hit a wall figuring out how to evalute the hand types. After a day chewing it over, I checked the reddit megathread and took inspiration from [r\_so9](https://www.reddit.com/r/adventofcode/comments/18cnzbm/2023_day_7_solutions/kcitbv3/)'s solution. I took some shortcuts because I thought I knew what I was doing, but clearly I didn't and had some issues getting the suits ordered correctly. There's a few artifacts in r\_so9's code that I don't understand but seem critical.
 
 For part two, there wasn't much I could do beyond crib a lite more from r\_so9. I understood what needed to be done, but my lack of F# knowledge meant I didn't know how to do it. I had something that I thought would work (and did for the example case), but failed to sort my input correctly. Thanks to [LxsterGames](https://www.reddit.com/r/adventofcode/comments/18cr4xr/2023_day_7_better_example_input_not_a_spoiler/?ref=share&ref_source=link) and their comprehensive example data, I was able to find a couple of key steps I'd skipped.
+
+## Day 8: Haunted Wasteland
+
+Having freshly completed Day 7, the Map structure was helpfully fresh in my mind, and mapping the input to a map of nodes was a simple task. Turning my mind towards writing a solution, I felt the call of recursion. Despite my apprehension, I impelemented a recursive algorithm with suprisingly little code and, to my suprise, it worked perfectly first time.
