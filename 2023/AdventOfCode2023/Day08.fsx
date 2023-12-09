@@ -28,5 +28,7 @@ let rec NextNode pathPointer mapPointer depth =
 NextNode 0 "AAA" 0
 |> printfn "Part 1: %i"
 
-// input
+// can I reuse the NextNode function?
+// does this require some kind of pre-processing to remove the leading letters?
+// I guess we need some array of 'to be processed' rows
 // |> printfn "Part 2: %i"
