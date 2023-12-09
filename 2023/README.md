@@ -56,3 +56,5 @@ For part two, there wasn't much I could do beyond crib a lite more from r\_so9. 
 ## Day 8: Haunted Wasteland
 
 Having freshly completed Day 7, the Map structure was helpfully fresh in my mind, and mapping the input to a map of nodes was a simple task. Turning my mind towards writing a solution, I felt the call of recursion. Despite my apprehension, I impelemented a recursive algorithm with suprisingly little code and, to my suprise, it worked perfectly first time.
+
+I have no idea how to do part 2, so I'll park that for a while (probably forever).
