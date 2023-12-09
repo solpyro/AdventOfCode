@@ -58,10 +58,6 @@ let HandComparator jIsJoker (a:Hand) (b:Hand) =
     | (a, b) when (a |> HandRank jIsJoker) < (b |> HandRank jIsJoker) -> -1
     | (a, b) -> CardComparator (if  jIsJoker then cardOrder_JLast else cardOrder) a b
 
-let foo = 
-    hands
-    |> Array.sortWith (HandComparator true)
-
 hands
 |> Array.sortWith (HandComparator false)
 |> Array.indexed
