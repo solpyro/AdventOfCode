@@ -32,10 +32,12 @@ let expanded =
     |> ToCols
     |> Expand
 
-// list of all galaxy coords
+let galaxies =
+    List.allPairs [0..expanded.GetLength(0)-1] [0..expanded.GetLength(1)-1]
+    |> List.filter (fun (y, x) -> expanded[y,x] = '#')
+
 // generate all pair combinations
-// calculate distance between them
-// sum distances
+// |> Array.sumBy (calculate distance between pairs)
 // |> printfn "Part 1: %i"
 
 // input
