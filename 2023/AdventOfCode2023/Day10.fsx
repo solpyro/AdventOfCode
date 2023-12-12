@@ -13,9 +13,12 @@ let s =
     |> Seq.pick id
 
 // walk the loop back to S
-// return half the loop length
-
-// input
+    // find a direction that connects to s
+    // recursively follow that trail 
+    // knowing where you came from and the shape will tell you where to go
+    // match will help you there
+    // return the list of coords that is the path
+// return half the path length (including the S)
 // |> printfn "Part 1: %i"
 
 // input
