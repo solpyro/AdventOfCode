@@ -1,7 +1,7 @@
 ﻿open System
 
-let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/06.txt")
-// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/06.txt")
+let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/11.txt")
+// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/11.txt")
 
 // input
 // |> parse

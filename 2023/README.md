@@ -64,3 +64,7 @@ I have no idea how to do part 2, so I'll park that for a while (probably forever
 Having broken the recursive seal, I jumped straignt to it for extrapolating the projections. Once again, I half expected my laptop to explode when I ran the code againt my input, but it seems I'm a better programmer than I give myself credit for and the code computed my answer without a hitch.
 
 Projecting into the past was pretty trivial since it was pretty much the same as part 1, just using the first element. There was a mild hitch when I forgot to call the new method inside itself, instead calling the part 1 method and geting weird results.
+
+## Day 10: Pipe Maze
+
+Figuring out the position of the `S` proved more difficult than I expected, but thanks to [Lars](https://stackoverflow.com/a/49898098/5789696) I was able to implement some F# magic (I'm still not sure how the Option type works).
