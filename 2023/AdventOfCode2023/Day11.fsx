@@ -1,7 +1,7 @@
 ﻿open System
 
-let lines = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/11.txt")
-// let lines = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/11.txt")
+// let lines = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/11.txt")
+let lines = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/11.txt")
 
 let image = 
     lines 
@@ -36,22 +36,22 @@ let galaxies =
     List.allPairs [0..expanded.GetLength(0)-1] [0..expanded.GetLength(1)-1]
     |> List.filter (fun (y, x) -> expanded[y,x] = '#')
 
-let AllPairCombinations existing source =
-    //pair head with every tail
-    //append to 'existing'
-    //if tail is 1
-        //return existing
-    //else
-        //AllPairCombinations existing source.tail
+let rec AllPairCombinations list =
+    if List.length(list) = 2 then
+        [(list[0], list[1])]
+    else 
+        List.append (list.Tail |> (List.allPairs [list.Head])) (list.Tail |> AllPairCombinations)
 
 let pairs =
-    galalxies
-    |> AllPairCombinations []
-    // List.allPairs galaxies galaxies
-    // |> List.filter (fun (a, b) -> not(a=b))
-// generate all pair combinations
-// |> Array.sumBy (calculate distance between pairs)
-// |> printfn "Part 1: %i"
+    galaxies
+    |> AllPairCombinations
+
+let GetDist ((y1,x1), (y2,x2)) =
+    abs(y2-y1)+abs(x2-x1)
+
+pairs
+|> List.sumBy GetDist
+|> printfn "Part 1: %i"
 
 // input
 // |> printfn "Part 2: %i"

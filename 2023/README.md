@@ -69,7 +69,7 @@ Projecting into the past was pretty trivial since it was pretty much the same as
 
 Figuring out the position of the `S` proved more difficult than I expected, but thanks to [Lars](https://stackoverflow.com/a/49898098/5789696) I was able to implement some F# magic (I'm still not sure how the Option type works).
 
-## Day 11: Cosmic Expansion
+## Day 11: Cosmic Expansion ⭐
 
-Some days I have a clear picture of what I need to do, and just a small gap in my knowledge of how to do it. Today was sucha a day and I was able to scour the internet for random little bits of code to help wiith expanding out the image. 
-As I was testing the code, I realsied I'd accidentally introduced a rotation by slicing into columns then recombining using the `array2d` cast. That quirk meant I could reuse the column slice to expand the 'rows' and the image would end up exactly how it started, but with the extra space as intended.
+Some days I have a clear picture of what I need to do, and just a small gap in my knowledge of how to do it. Today was such a day, and I was able to scour the internet for random little bits of code to help with expanding out the image. 
+As I was testing the code, I realised I'd accidentally introduced a rotation by slicing into columns then recombining using the `array2d` cast. That quirk meant I could reuse the column slice to expand the 'rows' and the image would end up exactly how it started, but with the extra space as intended. I had to roll my own combinator to only find single pairs, but once that was done everything fell into place for part 1.
