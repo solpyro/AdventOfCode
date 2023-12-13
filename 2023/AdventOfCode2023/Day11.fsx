@@ -36,6 +36,19 @@ let galaxies =
     List.allPairs [0..expanded.GetLength(0)-1] [0..expanded.GetLength(1)-1]
     |> List.filter (fun (y, x) -> expanded[y,x] = '#')
 
+let AllPairCombinations existing source =
+    //pair head with every tail
+    //append to 'existing'
+    //if tail is 1
+        //return existing
+    //else
+        //AllPairCombinations existing source.tail
+
+let pairs =
+    galalxies
+    |> AllPairCombinations []
+    // List.allPairs galaxies galaxies
+    // |> List.filter (fun (a, b) -> not(a=b))
 // generate all pair combinations
 // |> Array.sumBy (calculate distance between pairs)
 // |> printfn "Part 1: %i"
