@@ -77,3 +77,8 @@ As I was testing the code, I realised I'd accidentally introduced a rotation by 
 ## Day 12: Hot Springs
 
 Apart from parsing the data here, I'm not really too sure how to approach this one.
+
+## Day 13: Point of Incidence
+
+For the second day in a row, I'm not really sure how to approach this one. Obviously I should start by searching for a pair of identical rows/columns, but I saw in my input data already that there's some occasional red herrings, so I'd also need a routine to check that the rest of the reflection matches.
+
