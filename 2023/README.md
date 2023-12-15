@@ -82,3 +82,6 @@ Apart from parsing the data here, I'm not really too sure how to approach this o
 
 For the second day in a row, I'm not really sure how to approach this one. Obviously I should start by searching for a pair of identical rows/columns, but I saw in my input data already that there's some occasional red herrings, so I'd also need a routine to check that the rest of the reflection matches.
 
+## Day 15: Lens Library ⭐
+
+After a few days of tough-to-think-about puzzles, part 1 today was incredibly simple. 
