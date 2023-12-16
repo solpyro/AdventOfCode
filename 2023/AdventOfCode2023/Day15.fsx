@@ -9,5 +9,28 @@ input
 |> Array.sumBy HASH
 |> printfn "Part 1: %i"
 
-// input
-// |> printfn "Part 2: %i"
+type Lens = { Label:string; FocalLength:int }
+let boxes:Lens[][] = Array.init 256 (fun i -> Array.empty)
+for instr in input do
+    let label = instr.Split([|'=';'-'|], StringSplitOptions.RemoveEmptyEntries)[0]
+    let box = HASH label
+    let LensWithLabel ele = ele.Label = label
+    let LensesWithoutLabel ele = not(LensWithLabel ele)
+    if instr.Contains('-') then
+        boxes[box] <- Array.filter LensesWithoutLabel boxes[box]
+    else
+        let focalLength = instr.Split('=')[1] |> int
+        if (boxes[box] |> Array.exists LensWithLabel) then
+            // boxes[box][Array.FindIndex(boxes[box], LensWithLabel)].FocalLength <- focalLength //not sure why boxes[a][b] can't be updated like this
+            boxes[box][Array.FindIndex(boxes[box], LensWithLabel)] <- { Label=label; FocalLength=focalLength }
+        else
+            boxes[box] <- Array.append boxes[box] [|{Label = label; FocalLength = focalLength}|]
+
+boxes
+|> Array.mapi (fun i box -> (i+1, box))
+|> Array.sumBy (fun (i, box) -> 
+    (box 
+    |> Array.mapi (fun j lens -> (j, lens))
+    |> Array.sumBy (fun (j, lens) -> (j+1)*lens.FocalLength)
+    ) * i)
+|> printfn "Part 2: %i"

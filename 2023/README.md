@@ -86,9 +86,15 @@ For the second day in a row, I'm not really sure how to approach this one. Obvio
 
 Once again, I don't know where to start with this one, to the point that I can't even decide how I should parse the input data.
 
-## Day 15: Lens Library ⭐
+## Day 14: Parabolic Reflector Dish
+
+Once again, I don't know where to start with this one, to the point that I can't even decide how I should parse the input data.
+
+## Day 15: Lens Library ⭐⭐
 
 After a few days of tough-to-think-about puzzles, part 1 today was incredibly simple. 
+
+Part 2 felt easy enough as well, although it took a little more work to implement. By the time I had everything done, it was too late for me to understand why I wasn't able to just update the focal length of an instantiated `Lens`. I'm assuming it's something I could fix with a `mutable` keyword, but with fresh eyes I was able to simply replace a new copy of the lens instead.  
 
 ## Day 16: The Floor Will Be Lava
 
