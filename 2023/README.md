@@ -85,3 +85,7 @@ For the second day in a row, I'm not really sure how to approach this one. Obvio
 ## Day 15: Lens Library ⭐
 
 After a few days of tough-to-think-about puzzles, part 1 today was incredibly simple. 
+
+## Day 16: The Floor Will Be Lava
+
+I thought part 1 was too opaque, but after laying it out in pseudocode, I slowly managed to write the solution in F# code. The onyl problem I came across was that the queue-based loop to map the beam path never seems to end. Either the filter doesn't remove out-of-bounds beams, or the tail doesn't update the beams as I expect it to.
