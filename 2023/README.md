@@ -96,6 +96,7 @@ After a few days of tough-to-think-about puzzles, part 1 today was incredibly si
 
 Part 2 felt easy enough as well, although it took a little more work to implement. By the time I had everything done, it was too late for me to understand why I wasn't able to just update the focal length of an instantiated `Lens`. I'm assuming it's something I could fix with a `mutable` keyword, but with fresh eyes I was able to simply replace a new copy of the lens instead.  
 
-## Day 16: The Floor Will Be Lava
+## Day 16: The Floor Will Be Lava ⭐
 
 I thought part 1 was too opaque, but after laying it out in pseudocode, I slowly managed to write the solution in F# code. The onyl problem I came across was that the queue-based loop to map the beam path never seems to end. Either the filter doesn't remove out-of-bounds beams, or the tail doesn't update the beams as I expect it to.
+After soume rough debugging (FSI is not nice for that, especially when the problem's somewhere inside a looping function) I realsied that the problem was my halting condition (no beam heads) would never occur thanks to loops in the path. With some reworking, I was able to track the change in energy each frame instead, but still ran into issues, as there are some frames that do not update even though the patten is not complete, when beams travel through the same cells but in different directions. Eventually, I figured out I could skip the looping beams by keeping a log of all processed beams and discarding any we've already covered.
