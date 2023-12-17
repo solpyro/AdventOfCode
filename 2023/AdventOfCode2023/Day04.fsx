@@ -1,6 +1,7 @@
 ﻿open System
 
 let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/04.txt")
+// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/04.txt")
 
 type Card = {id:int;winners:int[];numbers:int[]}
 let cards =
@@ -15,20 +16,26 @@ let cards =
 let inList haystack needle =
     haystack
     |> Array.contains needle
-let calculateScore card =
+let countMatches card = 
     let isWinner = card.winners |> inList
-    let count = card.numbers |> Array.filter(fun n -> isWinner n) |> Array.length
-    pown 2 (count-1)
+    card.numbers |> Array.filter(fun n -> isWinner n) |> Array.length
+let calculateScore card = pown 2 ((countMatches card)-1)
 
 cards
 |> Array.sumBy calculateScore
 |> printfn "Part 1: %i"
 
-// cards
-// |> printfn "Part 2: %i"
-// TODO - Day 4 Part 2
+let mutable part2Cards = cards
+let mutable cardsToProcess = cards
+while cardsToProcess.Length > 0 do
+    cardsToProcess <- cardsToProcess
+        |> Array.collect (fun card ->
+            let score = countMatches card
+            if score > 0 then
+                cards[card.id..card.id+score-1]
+            else [||])
+    part2Cards <- Array.append part2Cards cardsToProcess    
 
-// Somehow I should have step through an array of cards that I can also keep adding cards to
-// each card will append a certain number of cards from the original `cards` array 
-// then the current card would be discarded and a counter would be incremented
-// once the array was empry again, the counter would be the total number of won cards; our solution
+part2Cards
+|> Array.length
+|> printfn "Part 2: %i"

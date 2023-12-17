@@ -22,9 +22,11 @@ Part 2 felt like it would be easy, but once again I ran into some problems with 
 
 Compared to day 2, parsing the data here was pretty easy, but once again, I had to figure out how to express my idea in a _functional_ way. Having written a neat little script that would find all non-numeric characters, then find and sum all numeric neighbours, I realised I was getting the wrong result for the test data. Rereading the challenge, I realised I shouldn't be summing single digits, but every _string of numbers_ that touch the symbols (and not duplicating them at that).
 
-## Day 4: Scratchcards ⭐
+## Day 4: Scratchcards ⭐⭐
 
 still feel like I'm "tricking" thento doing what i want, but from reading yesterday I was able to understand, and utilise the 'currying' pattern
+
+Circling back after having learned some more F# techniques, I was able to write some dirty impiritive bruteforce algorithm to expand out the card list.
 
 ## Day 5: If You Give A Seed A Fertilizer
 
