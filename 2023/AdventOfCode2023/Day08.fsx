@@ -1,7 +1,7 @@
 ﻿open System
 
-// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/08.2.txt")
-let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/08.txt")
+let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/tests/08.3.txt")
+// let input = System.IO.File.ReadAllLines("2023/AdventOfCode2023/inputs/08.txt")
 
 let path = input[0]
 type Node = { Left:string; Right:string; }
@@ -28,7 +28,12 @@ let rec NextNode pathPointer mapPointer depth =
 NextNode 0 "AAA" 0
 |> printfn "Part 1: %i"
 
-// can I reuse the NextNode function?
-// does this require some kind of pre-processing to remove the leading letters?
-// I guess we need some array of 'to be processed' rows
+// gather all **A nodes into a processing array
+// set counter to 0
+// while processing array is not all z do
+    // apply next step algorithm 
+    // need to rework NextNode function a little; it doesn't want to be recursive here
+    // store next nodes in processing array
+
+// counter
 // |> printfn "Part 2: %i"
